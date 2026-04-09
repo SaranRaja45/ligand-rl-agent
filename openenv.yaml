@@ -1,0 +1,14 @@
+name: HM-Dock-env
+
+tasks:
+  - name: task1
+    grader:
+      type: reward
+
+  - name: task2
+    grader:
+      type: reward
+
+  - name: task3
+    grader:
+      type: reward
