@@ -1,14 +1,17 @@
 name: HM-Dock-env
 
 tasks:
-  - name: Task1
+  - name: task1
     grader:
       type: numeric
+      output: task1
       
-  - name: Task2
+  - name: task2
     grader:
       type: numeric
+      output: task2
   
-  - name: Task3
+  - name: task3
     grader:
       type: numeric
+      output: task3
