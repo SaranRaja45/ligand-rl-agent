@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import uvicorn
 from run_baseline import run_all_tasks
 
 app = FastAPI()
@@ -24,3 +25,9 @@ def reset():
 @app.get("/")
 def root():
     return{"status": "HM-Dock API working"}
+
+def main():
+    uvicorn.run(app, host="0.0.0.0", port=7860)
+
+if __name__ == "__main__":
+    main()
