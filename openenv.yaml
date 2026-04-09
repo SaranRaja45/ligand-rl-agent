@@ -1,20 +1,14 @@
 name: HM-Dock-env
 
-actions:
-  type: discrete
-  size: 10
-
-observation:
-  type: dict
-  fields:
-    ligand: string
-    score: float
-    step: int
-
-reward:
-  description: Higher reward for better ligands
-
 tasks:
-  - name: task1
-  - name: task2
-  - name: task3
+  - name: Task1
+    grader:
+      type: numeric
+      
+  - name: Task2
+    grader:
+      type: numeric
+  
+  - name: Task3
+    grader:
+      type: numeric
