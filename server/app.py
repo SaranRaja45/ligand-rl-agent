@@ -20,7 +20,7 @@ def reset():
     task2 = round(t2 / episodes, 2)
     task3 = round(t3 / episodes, 2)
 
-    return{"Task1": task1, "Task2": task2, "Task3": task3}
+    return{"task1": task1, "task2": task2, "task3": task3}
 
 @app.get("/")
 def root():
